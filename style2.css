@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    background: gray;
+    margin: 20px auto;
+    transition: all .5s ease;
+}
+button{
+    font-size: 18px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-weight: 600;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(.95);
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+.green{
+    background: green;
+}
+.purple{
+    background: purple;
+}
+.aqua{
+    background: aqua;
+}
+.pink{
+    background: pink;
+}
+.red:hover{
+    background: rgb(233, 11, 11);
+}
+.blue:hover{
+    background: rgb(14, 14, 224);
+}
+.green:hover{
+    background: rgb(9, 158, 9);
+}
+.purple:hover{
+    background: rgb(148, 21, 148);
+}
+.aqua:hover{
+    background: rgb(15, 207, 207);
+}
+.pink:hover{
+    background: rgb(226, 154, 166);
+}

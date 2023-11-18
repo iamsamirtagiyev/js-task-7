@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.inputs{
+    width: 47%;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    border: solid 2px rgba(255, 255, 255, .5);
+    padding: 15px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.input-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.input-box span{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    transition: all .5s ease;
+    height: 4px;
+    line-height: 4px;
+    padding: 0 2px;
+}
+
+.input-box input:focus ~ span,
+.input-box input:valid ~ span{
+    top: 20%;
+    font-size: 13px;
+}
+
+.add-btn{
+    border: solid 2px rgba(255, 255, 255, .5);
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-weight: 500;
+}
+.add-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+.table{
+    width: 50%;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    border: solid 2px rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.table tr:not(thead tr){
+    background: rgba(134, 134, 134, 0.5);
+    padding: 5px 0;
+}
+
+.table thead tr th:first-child{
+    border-top-left-radius: 5px;
+}
+.table thead tr th:last-child{
+    border-top-right-radius: 5px;
+}
+
+.table tr th{
+    background: #fff;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.table tbody tr td{
+    text-align: center;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
