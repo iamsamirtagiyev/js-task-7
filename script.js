@@ -5,12 +5,14 @@ const btn = document.querySelector('.add-btn')
 const tBody = document.querySelector('tbody')
 
 btn.addEventListener('click', () => {
-    tBody.innerHTML += `
-    <tr>
-        <td>${nameInput.value}</td>
-        <td>${surnameInput.value}</td>
-        <td>${ageInput.value}</td>
-    </tr>`
+    if (nameInput.value != '' || surnameInput.value != '' || ageInput.value != '') {
+        tBody.innerHTML += `
+        <tr>
+            <td>${nameInput.value}</td>
+            <td>${surnameInput.value}</td>
+            <td>${ageInput.value}</td>
+        </tr>`
+    }
 
     nameInput.value = ''
     surnameInput.value = ''
